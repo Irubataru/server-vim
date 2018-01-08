@@ -1,0 +1,9 @@
+spell/*
+clang/*
+view/*
+plugged/*
+*/tags
+*~
+*.swp
+*.pyc
+.netrwhist

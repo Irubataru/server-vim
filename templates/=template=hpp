@@ -1,0 +1,13 @@
+
+/*
+ * Created: %DAY%-%MONTH%-%YEAR%
+ * Modified: 
+ * Author: Jonas R. Glesaaen (jonas@glesaaen.com)
+ */
+
+#ifndef %GUARD%
+#define %GUARD%
+
+%HERE%
+
+#endif /* %GUARD% */
