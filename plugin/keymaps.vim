@@ -20,10 +20,8 @@ nnoremap <silent> zj :call NextClosedFold('j')<CR>
 nnoremap <silent> zk :call NextClosedFold('k')<CR>
 
 " Buffer Movement
-nnoremap <C-H> :bprevious<CR>
-nnoremap <C-L> :bnext<CR>
-nnoremap <Leader>k :BuffergatorMruCyclePrev<cr>
-nnoremap <Leader>j :BuffergatorMruCycleNext<cr>
+nnoremap <silent> <C-l> :CtrlSpaceGoDown<CR>
+nnoremap <silent> <C-h> :CtrlSpaceGoUp<CR>
 
 " Tab movement
 noremap <C-Left> :tabp<CR>
@@ -82,6 +80,12 @@ endif
 " Plugin keymaps
 " {{{
 
+
+"" Vim-CtrlSpace
+"" {{{
+let g:CtrlSpaceDefaultMappingKey = "<C-b>"
+"" }}}
+
 "" vim-clang-format
 "" {{{
 autocmd FileType c,cpp nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
@@ -102,30 +106,30 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 "" CtrlP
 "" {{{
 "" Use a leader instead of the actual named binding
-nmap <leader>p :CtrlP<cr>
+nmap <silent> <leader>p :CtrlP<cr>
 
 "" Easy bindings for its various modes
-nmap <leader>bb :CtrlPBuffer<cr>
-nmap <leader>bm :CtrlPMixed<cr>
-nmap <leader>bs :CtrlPMRU<cr>
+nmap <silent> <leader>bb :CtrlPBuffer<cr>
+nmap <silent> <leader>bm :CtrlPMixed<cr>
+nmap <silent> <leader>bs :CtrlPMRU<cr>
 "" }}}
 
 "" vim-buffergator
 "" {{{
 "" View the entire list of buffers open
-nnoremap <Leader>bl :BuffergatorOpen<cr>
+nnoremap <silent> <Leader>bl :BuffergatorOpen<cr>
 "" }}}
 
 "" Gundo
 "" {{{
-nnoremap <Leader>uu :GundoToggle<CR>
+nnoremap <silent> <Leader>uu :GundoToggle<CR>
 "" }}}
 
 "" fugitive.vim
 "" {{{
-nnoremap <Leader>gg :Gstatus<CR>
-nnoremap <Leader>gc :Gcommit<CR>
-nnoremap <Leader>gd :Gdiff<CR>
+nnoremap <silent> <Leader>gg :Gstatus<CR>
+nnoremap <silent> <Leader>gc :Gcommit<CR>
+nnoremap <silent> <Leader>gd :Gdiff<CR>
 "" }}}
 
 "" hardmode
@@ -154,6 +158,16 @@ nmap <Leader>L <Plug>(easymotion-overwin-line)
 " Move to word
 map  <Leader>w <Plug>(easymotion-bd-w)
 nmap <Leader>w <Plug>(easymotion-overwin-w)
+"" }}}
+
+"" Goyo
+"" {{{
+nnoremap <silent> <C-g> :Goyo<CR>
+"" }}}
+
+"" Limelight
+"" {{{
+nnoremap <silent> <C-y> :Limelight!!<CR>
 "" }}}
 
 "" Commands for compiling and running C++ programs

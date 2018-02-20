@@ -14,13 +14,13 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-dispatch'
 Plug 'wikitopian/hardmode'
 
-
 " Buffer and file-management
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'jeetsukumaran/vim-buffergator'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' } | 
       \ Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle' }
 Plug 'MattesGroeger/vim-bookmarks'
+Plug 'vim-ctrlspace/vim-ctrlspace'
 
 " Additional functionality
 Plug 'easymotion/vim-easymotion'
@@ -36,15 +36,20 @@ Plug 'itchyny/vim-cursorword', { 'for': 'cpp' }
 Plug 'tpope/vim-fugitive'  " The best git plugin
 Plug 'airblade/vim-rooter' " Changes the vim directory to project root
 
-" Related to the look
-Plug 'guns/xterm-color-table.vim'
+" Colour schemes
+Plug 'junegunn/seoul256.vim'
 Plug 'Irubataru/vim-colors-solarized'
 Plug 'chriskempson/base16-vim'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'trevordmiller/nova-vim'
+
+" Related to the look
+Plug 'guns/xterm-color-table.vim'
+Plug 'itchyny/lightline.vim'
 Plug 'haya14busa/vim-operator-flashy' | 
       \ Plug 'kana/vim-operator-user'
 Plug 'haya14busa/incsearch.vim'
+Plug 'junegunn/limelight.vim'
+Plug 'junegunn/goyo.vim'
 
 " For C++
 Plug 'ervandew/supertab' |

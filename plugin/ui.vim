@@ -3,20 +3,17 @@
 " Colors and styling
 "{{{
 
-""{{{ Solarized theme
+set t_Co=256
+set t_ut= "Fix for bg colour issues in tmux http://sunaku.github.io/vim-256color-bce.html
+
+""{{{ base16 theme
 "let base16colorspace = 256
-"set t_Co=256
-""let g:solarized_termcolors=256
-"set t_ut= "Fix for bg colour issues in tmux http://sunaku.github.io/vim-256color-bce.html
-"set background=dark
-"colorscheme solarized
+"colorscheme base16-default-dark
+"hi Base16Flashy term=bold ctermbg=18 guibg=#282828
 ""}}}
 
-"{{{ base16 theme
-let base16colorspace = 256
-colorscheme base16-default-dark
-"colorscheme base16-default-light
-hi Base16Flashy term=bold ctermbg=18 guibg=#282828
+"{{{ seoul
+colorscheme seoul256
 "}}}
 
 set conceallevel=1 "Use vims new conceal feature
