@@ -28,6 +28,10 @@ set hidden
 
 let g:tex_flavor="latex"
 
+" Run e on all elements of the arglist
+" This is so that I populate a "tab" in CtrlSpace with all files from the arglist
+au VimEnter * nested silent! exe "argdo set eventignore-=Syntax e" | bn
+
 "}}}
 
 " Backup if necessary
